@@ -18,6 +18,9 @@ def prefixArray(arr):
 arr = [5,10,1,2,6]
 print(prefixArray(arr))
 
+#time complexity : O(N), since we are iterating only once over the given array
+#space complexity : O(N), since we are creating a new array of same length of the given array.  
+
 
 
 
