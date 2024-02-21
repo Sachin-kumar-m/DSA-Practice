@@ -37,5 +37,8 @@ def rangedSum(prefixedArray,Q):
 
 print(rangedSum(pfArray,Q))
 
+#time complexity: O(N+Q), since we are iterating thought the initial array once its O(N) and also we are iteratin through the Q so O(N+Q)
+#space complexity: O(N), since we are creaing a new array of length N
+
 
 
