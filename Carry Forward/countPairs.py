@@ -16,7 +16,7 @@ this is why we come from right and get the count of G, and when we come across '
 to the ans, and keep doing it for all the a's that we find
 """
 
-s = ['b','a','a','g','d','c','a','g']
+s = ['a','d','g','a','g','a','g','f','g']
 # count the number of ag pairs in the above array
 
 def countPairs(A):
@@ -26,12 +26,12 @@ def countPairs(A):
     for i in range(n-1,-1,-1): #iterating from right so we can get the count of g on the right of a
         if A[i]=='g':
             countofG+=1 #when we find 'g' we increment the count of G on the right
-        if A[i]=='a':
+        elif A[i]=='a':
             ans += countofG #when we find 'a', we add the countG value to the answere.
     return ans
 
-
-    """
+print(countPairs(s))
+"""
 TIme complexity : O(N), since we are iterating only once through the array
 Space Complexity: O(1), we are not using any extra space. 
-    """
+""" 
