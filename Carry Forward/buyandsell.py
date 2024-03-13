@@ -23,4 +23,4 @@ def stock(A):
 print(stock(A))
 
 #Time Complexity : O(N)
-#Space Complexity : O(1)
+#Space Complexity : O(1) since we are using constant space. 
