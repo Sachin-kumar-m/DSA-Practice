@@ -90,7 +90,8 @@ def optimizedApproact(a):
             if minIndex!=-1:
                 result = min(result,minIndex-maxIndex+1)
     return result
-print(optimizedApproact(a))
+# print(optimizedApproact(a))
 
 #time complexity : O(N)
 #space complexity : O(1) 
+
