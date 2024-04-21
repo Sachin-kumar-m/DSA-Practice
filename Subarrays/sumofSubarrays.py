@@ -36,3 +36,21 @@ def optimization(A):
             else:
               print(prefixArray[j]-prefixArray[i-1],end=",")
 optimization(A)
+
+# Time Complexity: O(N^2)
+# Space Complexity: O(N) since we are creating a new prefixArray, if we want to reduce on space, we can modify the original array
+print()
+
+'''now optimize the space complexity
+instead of prefix array we can directly reset the sum value after each iteration of the inner loop which will eventually gives
+us the sum of the sub array.
+"'''
+
+def optimizatizedSpace(A):
+   
+    for i in range(len(A)):
+        summ = 0
+        for j in range(i,len(A)):
+            summ+=A[j]
+            print(summ,end=",")
+optimizatizedSpace(A)
