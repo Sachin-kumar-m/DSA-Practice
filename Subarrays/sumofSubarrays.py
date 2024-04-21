@@ -54,3 +54,6 @@ def optimizatizedSpace(A):
             summ+=A[j]
             print(summ,end=",")
 optimizatizedSpace(A)
+
+# time Complexity: O(N^2)
+# space complexity: O(1)
