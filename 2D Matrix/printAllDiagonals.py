@@ -12,6 +12,11 @@ this is for one diagonal, to print lower triangle do the same for k times (len(A
 
 to print upper triangle, same approach but j value will be len(A[0])-2, sine we have to start
 from 2nd last element of the first row.
+
+
+print all the diagonlas starting with row 0 (top row)
+
+then print all the diagonlas starting with m-1 col (last column)
 '''
 
 # A = [[1,2,3,4,5],[6,7,8,9,1],[1,2,3,4,5],[1,2,3,6,8]]
@@ -22,7 +27,7 @@ for i in A:
     print(i)
 
 def diagonal(A):
-    for i in range(len(A)):
+    for i in range(1,len(A)):
         row = i
         col = len(A[0])-1
         while row<len(A) and col>=0:
