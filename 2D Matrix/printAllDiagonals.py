@@ -27,6 +27,7 @@ for i in A:
     print(i)
 
 def diagonal(A):
+    # printing all the diagonals starting from last column. row = i, col=len(A[0])-1
     for i in range(1,len(A)):
         row = i
         col = len(A[0])-1
@@ -35,7 +36,7 @@ def diagonal(A):
             row+=1
             col-=1
         print()
-        
+    # printing all the diagonals starting from first row, row = 0, col = i
     for i in range(len(A)):
         row = 0
         col = i
