@@ -49,5 +49,5 @@ def diagonal(A):
 diagonal(A)
 
 
-# Time Complexity: O(N^2), while loop will have n iterations and a for loop of n iterations
+# Time Complexity: O(N*M), while loop will have n iterations and a for loop of n iterations
 # Space Complexity: O(1), not using any extra space
