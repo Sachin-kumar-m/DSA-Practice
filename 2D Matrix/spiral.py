@@ -34,7 +34,7 @@ def boundary(A):
         n-=2
         i+=1
         j+=1
-    if n ==1:
+    if n ==1: #to handle edge case where we are not printing the middle most element.
         ans.append(A[i][j])
     return ans
 print(boundary(A))
