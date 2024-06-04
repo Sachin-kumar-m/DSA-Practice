@@ -33,4 +33,8 @@ def majority(A):
     return False
 print(majority(A))
 
+'''
+followup on this will be n/3 majority, then we need to delete 3 distinct elements
+'''
+
 
