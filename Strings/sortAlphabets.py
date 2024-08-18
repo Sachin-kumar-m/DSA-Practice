@@ -22,3 +22,6 @@ def sorting(A):
                 ans+=chr(i)
     return ans
 print(sorting(A))
+
+# TC: O(N), we are traversing through the string once. other traversal is of contant space so total will be o of N
+# SC: O(N), we are creating a new string also we are creating an array of length 256, so total will be O of N
