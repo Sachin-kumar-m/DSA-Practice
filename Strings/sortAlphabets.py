@@ -3,6 +3,11 @@ given a string with all lower case characters, sort the string in accending orde
 '''
 
 
+'''
+Approach : we have just 26 alphabets so we can store number of ocurance in an array.
+and then iterate and add those occurance of the alphabet
+'''
+
 A = 'bdabacdb'
 
 def sorting(A):
