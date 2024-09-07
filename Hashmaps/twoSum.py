@@ -74,7 +74,7 @@ def indexes(A,k):
    
 print(indexes(A,k))
 
-# we can do this using sets
+# we can do this using sets instead of hashmaps
 
 def twoSumUsingSets(A,k):
     s = set()
