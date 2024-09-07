@@ -41,8 +41,8 @@ def optimization(A,k):
     for i in range(len(A)):
         b = k - A[i]
         if b in freq:
-            if A[i]==b:
-                if freq[A[i]]>1:
+            if A[i]==b:#checking if the element is same 
+                if freq[A[i]]>1: #if same we are checking its frequency, and if frequency is more than 1 
                     return True
             else:
                 return True
@@ -74,4 +74,15 @@ def indexes(A,k):
    
 print(indexes(A,k))
 
+# we can do this using sets instead of hashmaps
 
+def twoSumUsingSets(A,k):
+    s = set()
+    for i in range(len(A)):
+        compliment = k - A[i]
+        if compliment in s: #we are checking if the compliment is in our sets. and A[i] only if its not in the set this is to avoide same number sum
+            return True
+        else:
+            s.add(A[i])
+    return False
+print(twoSumUsingSets(A,k))
