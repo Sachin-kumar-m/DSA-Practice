@@ -67,7 +67,7 @@ def indexes(A,k):
             hashmap[A[i]] = i
     for i in range(len(A)):
         compliment = k - A[i]
-        if compliment in hashmap and i!=hashmap[compliment]:
+        if compliment in hashmap and i!=hashmap[compliment]: #second condition is to check if its not the same index or number
             
             return [i,hashmap[compliment]]
     return False
