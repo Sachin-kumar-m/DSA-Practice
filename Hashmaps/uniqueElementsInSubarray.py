@@ -46,3 +46,6 @@ def uniqueElementsInSubarray(A,k):
 
 
 uniqueElementsInSubarray(A,k)
+
+# TC : O(N) + O(K) = O(N), we are iterating through the array only once
+# SC : O(N), worst case scenario, if all the elemts in the array are unique and k = len(A), then we will be storing N elements in our hashmap
