@@ -13,6 +13,6 @@ def fastExponents(a,n,m):
         return 1
     p = fastExponents(a,n//2,m)
     if n%2==0:
-        return (p*p)%a
+        return (p*p)%m
     else:
         return ((p*p)%m*a)%m
