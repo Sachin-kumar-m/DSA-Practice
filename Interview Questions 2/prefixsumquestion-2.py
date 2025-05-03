@@ -21,7 +21,8 @@ our final answer.
 def optimization(A,q):
     for i in q:
         A[i[0]]+=i[2]
-        A[i[1]+1]-=i[2]
+        if i[1]<len(A):
+            A[i[1]+1]-=i[2]
     
     pf = [0]*len(A)
     pf[0]=A[0]
