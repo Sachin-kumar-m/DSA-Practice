@@ -21,7 +21,7 @@ print(sumofallsubarrays(A))
 '''optimization, we can calculate the occurance of each element and then muliply the occurance with the element and that should give 
 us the answere
 
-calculate the occurance of ith: (i+1)*(n-i)
+calculate the occurance of ith: (i+1)*(n-i) for matrix problem we use (i+1)*(n-i)*(j+1)*(m-j) 
 '''
 def optimization(A):
     n = len(A)
