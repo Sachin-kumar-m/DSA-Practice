@@ -35,3 +35,23 @@ def approach(nums):
     return ans
 # TimeCompexity : O(N), we are itterating throught the array once.
 # Space Compexity : O(n), we are using a set of worse case length N
+
+# To optimize sapce complexity we can go with another approach
+'''
+the approach is simple, we iterate through all the elements in the array,
+and mark it as visited by make the number in the index as negative,
+
+so that means any index element which is not a negative that index+1 is the missing number
+'''
+def optimization(nums):
+    for num in nums:
+        index = num - 1
+        if nums[index]>0:
+            nums[index] = - nums[index] #marking the element in the index as visited by making it negative
+    ans = []
+    for i in range(len(nums)):
+        if nums[i]>0:
+            ans.append(i+1)
+    return ans
+# TimeCompexity : O(N), we are itterating throught the array once.
+# Space Compexity : O(1), we are not using extra space, 
